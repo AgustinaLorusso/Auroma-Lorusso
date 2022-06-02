@@ -1,0 +1,125 @@
+
+@media (max-width: 575px){
+
+    .img__velas{
+        width: 100px;
+        height: 100px; 
+    } 
+    .portada{
+        height: 50vh;  
+    }
+    .slogan{
+        height:17%;
+    }
+    .prueba{
+        margin-left: 5%;
+        width: 90%;    
+    } 
+    .video{
+        width: 70%;
+        margin-left: 17%;
+    }
+    .introduccion{
+        width: 100%;
+        text-align: center;
+        margin-left: 5%;
+        padding-bottom: 5%;
+    }
+    .header__otros{
+        display: none;
+    }
+    .img__log{
+        display: none;
+    }
+    .back{
+        background-image: url(./assets/img/margen1.jpg);
+    }
+
+}
+@media (min-width: 576px) and (max-width: 767px){
+    
+    .img__velas{
+        width: 200px;
+        height: 200px; 
+    }
+    .portada{
+        height: 60vh;  
+    }
+    .slogan{
+        height: 15%;
+    }
+    .prueba{
+        margin-left: 10%;
+        width: 80%;    
+    } 
+    .video{
+        width: 70%;
+        margin-left: 17%;
+    }
+    .introduccion{
+        width: 100%;
+        text-align: center;
+        margin-left: 5%;
+        padding-bottom: 5%;
+    }
+    .header__otros{
+        display: none;
+    }
+
+    .img__log{
+        display: none;
+    }
+  
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+    
+    .img__velas{
+        width:200px;
+        height:200px; 
+    }
+
+    .prueba{
+        margin-left: 10%;
+        width: 80%;    
+    } 
+    .video{
+        width: 70%;
+        margin-left:18%;
+    }
+    .introduccion{
+        width: 90%;
+        text-align: center;
+        margin-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .header__otros{
+        display: none;
+    }
+
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .img__velas{
+        width:200px;
+        height:200px; 
+    }
+
+    .prueba{
+        margin-left: 10%;
+        width: 80%;    
+    } 
+    .video{
+        width: 90%;
+        margin-left:60%;
+    }
+    .introduccion{
+        width: 90%;
+        text-align: center;
+        margin-left: 10%;
+        padding-bottom: 5%;
+    }
+
+}

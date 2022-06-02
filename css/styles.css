@@ -1,0 +1,221 @@
+/*ESTILOS COMPARTIDOS*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+.main {
+  background-image: linear-gradient(to bottom, #fff9ed, #fef5e9, #fcf2e4, #fbeee0, #faeadc, #ddcfc2, #dfcbbc, #dac8ba, #d3c2b5, #c4b4a7, #b5a599); }
+
+.portada {
+  width: 100%;
+  height: 85vh; }
+
+.slogan {
+  background-color: color(#837367);
+  color: #fff9ed;
+  margin-top: 7%;
+  height: 10%;
+  font-family: font-family("Cormorant Garamond", serif);
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
+
+/*EFECTOS*/
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*MAIN INDEX*/
+.video {
+  width: 90%; }
+
+.introduccion {
+  width: 100%;
+  text-align: center;
+  margin-left: 5%;
+  padding-bottom: 5%; }
+  .introduccion .texto {
+    margin-right: 10%;
+    color: color(#4e443c);
+    font-family: font-family("Cormorant Garamond", serif); }
+  .introduccion .titulo1 {
+    text-decoration: none;
+    color: color(#4e443c);
+    font-family: font-family("Cormorant Garamond", serif); }
+
+/*MAIN PRODUCTOS*/
+.img__velas {
+  width: 300px;
+  height: 300px;
+  transition: all .5s;
+  margin-top: 5%; }
+  .img__velas:hover {
+    transform: scale(1.1); }
+
+/*MAIN LOCALES*/
+.slogan2 {
+  background-color: color(#837367);
+  color: #fff9ed;
+  height: 10%;
+  font-family: font-family("Cormorant Garamond", serif);
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
+
+.div__loc {
+  background-color: #b7a597;
+  color: white;
+  font-family: font-family("Cormorant Garamond", serif); }
+
+.try {
+  margin-left: 13%; }
+  .try .try3 {
+    text-align: center; }
+    .try .try3 .horarios {
+      font-weight: bold; }
+
+.local2 {
+  margin-top: 5%;
+  padding-bottom: 5%; }
+  .local2 .try4 {
+    background-color: #792f2f;
+    color: white;
+    text-align: center;
+    font-family: font-family("Cormorant Garamond", serif); }
+
+.try2 {
+  background-color: #4f954f;
+  color: white;
+  text-align: center;
+  font-family: font-family("Cormorant Garamond", serif); }
+
+/*MAIN LOGIN*/
+.principal {
+  background-color: color(#837367);
+  color: #fff9ed;
+  font-family: font-family("Cormorant Garamond", serif);
+  text-align: center; }
+
+.img__log {
+  width: auto; }
+
+/*MAIN CONTACTO*/
+.prueba {
+  width: 50%;
+  margin-left: 25%; }
+  .prueba .prueba2 {
+    background-color: #96887d;
+    color: white;
+    font-family: 'Cormorant Garamond', serif; }
+
+@media (max-width: 575px) {
+  .img__velas {
+    width: 100px;
+    height: 100px; }
+  .portada {
+    height: 50vh; }
+  .slogan {
+    height: 17%; }
+  .prueba {
+    margin-left: 5%;
+    width: 90%; }
+  .video {
+    width: 70%;
+    margin-left: 17%; }
+  .introduccion {
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+    padding-bottom: 5%; }
+  .header__otros {
+    display: none; }
+  .img__log {
+    display: none; }
+  .back {
+    background-image: url(./assets/img/margen1.jpg); } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .img__velas {
+    width: 200px;
+    height: 200px; }
+  .portada {
+    height: 60vh; }
+  .slogan {
+    height: 15%; }
+  .prueba {
+    margin-left: 10%;
+    width: 80%; }
+  .video {
+    width: 70%;
+    margin-left: 17%; }
+  .introduccion {
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+    padding-bottom: 5%; }
+  .header__otros {
+    display: none; }
+  .img__log {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img__velas {
+    width: 200px;
+    height: 200px; }
+  .prueba {
+    margin-left: 10%;
+    width: 80%; }
+  .video {
+    width: 70%;
+    margin-left: 18%; }
+  .introduccion {
+    width: 90%;
+    text-align: center;
+    margin-left: 10%;
+    padding-bottom: 5%; }
+  .header__otros {
+    display: none; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .img__velas {
+    width: 200px;
+    height: 200px; }
+  .prueba {
+    margin-left: 10%;
+    width: 80%; }
+  .video {
+    width: 90%;
+    margin-left: 60%; }
+  .introduccion {
+    width: 90%;
+    text-align: center;
+    margin-left: 10%;
+    padding-bottom: 5%; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*HEADER*/
+.color {
+  background-color: background-color(#fff5ea); }
+  .color .logo {
+    width: 100px;
+    height: 100px; }
+  .color .div__nav {
+    margin-left: 40%; }
+    .color .div__nav .colorF {
+      color: color(#837367);
+      font-family: font-family("Cormorant Garamond", serif);
+      font-weight: bold;
+      font-size: large; }
+
+/*FOOTER*/
+.colorFot {
+  background-color: background-color(#ebd9cb); }
+  .colorFot .div__fot {
+    text-align: center;
+    font-family: font-family("Cormorant Garamond", serif); }
+    .colorFot .div__fot .div__a {
+      text-decoration: none;
+      color: color(#4e443c); }

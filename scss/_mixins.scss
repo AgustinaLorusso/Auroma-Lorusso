@@ -1,0 +1,10 @@
+@mixin medidas ($ancho,$alto) {
+    width:$ancho;
+    height:$alto;  
+}
+
+@mixin font ($estilo-letra,$font-size,$font-color) {
+    font-family: $estilo-letra;
+    font-size: $font-size;
+    color: $font-color;
+}

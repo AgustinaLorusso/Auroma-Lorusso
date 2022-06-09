@@ -1,22 +1,32 @@
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
 /*ESTILOS COMPARTIDOS*/
 .main{
-    background-image:linear-gradient(to bottom, #fff9ed, #fef5e9, #fcf2e4, #fbeee0, #faeadc, #ddcfc2, #dfcbbc, #dac8ba, #d3c2b5, #c4b4a7, #b5a599);
+    background-color: map-get($mapa-colores,colormains);
 }
 .portada{
-    width: 100%;
-    height: 85vh;  
+    @include medidas(100%,85vh);
 }
 .slogan{
-    background-color:$fontColor;
-    color: #fff9ed;
-    margin-top: 7%;
-    height: 10%;
-    font-family:$fontFamily;
+    background-color:map-get($mapa-colores,grisclaro);
+    @include font ($fontFamily,auto,#30190e);
+    @include medidas(40%,15%);
+    margin-top: 10%;
     animation-duration: 2s;
     animation-name: aparecer;
-    animation-iteration-count: 1 ;
+    animation-iteration-count: 1;
+}
+.portada1{
+    @include medidas(95vw,65vh);
+    background-color:map-get($mapa-colores,marron);   
+}
+.portada2{
+    @include medidas(95vw,50vh);
+    background-color:map-get($mapa-colores,marron);   
 }
 
 /*EFECTOS*/
@@ -33,28 +43,143 @@
 .video{
     width: 90%;
 }
-.introduccion{
-    width: 100%;
-    text-align: center;
-    margin-left: 5%;
-    padding-bottom: 5%;
-    .texto{
-        margin-right: 10%;
-        color:$fontColor2;
-        font-family:$fontFamily; 
-    }
-    .titulo1{
-        text-decoration: none;
-        color:$fontColor2;
-        font-family:$fontFamily;
-    }    
-    
+.img_portada{
+    width: 80%;
+    padding-top: 5%;
+    margin-left: 10%;
 }
+.texto_publi1{
+    .core{
+        text-align: start;
+        margin-left: 10%;
+        @include font ($fontFamily3,auto,#30190e);
+        hr.style1{
+            border-top: 1px solid #30190e;
+        }
+        .core_font{
+            font-size: 300%;
+        }
+    }
+    
+    .devil{
+        @extend .core;
+        color:black;
+        hr.style2{
+            border-top: 1px solid  black;
+        }
+        .devil_font{
+            font-size: 300%;
+        }
+    }
+    .detalle{
+        text-align: center;
+        margin-top: 5%;
+        .text_det{
+            @include font ($fontFamily2,large,#30190e);
+            padding-left: 10%;
+        }
+        .button_det{
+            width: 30%;
+            @include font ($fontFamily3,larger,white);
+            background-color: #30190e;
+            border-radius: 5%;
+            margin-top: 10%;
+        }
+        .text_det2{
+            @include font ($fontFamily2,large,black);
+            padding-left: 10%;
+        }
+        .button_det2{
+            @include font ($fontFamily3,larger,white);
+            margin-top: 10%;
+            width: 30%;
+            background-color: black;
+            border-radius: 5%;
+        }
+        
+    }
+}
+
+.publi1{
+    background-color: #cdc2bc;
+}
+.publi2{
+    background-color:#c0bbb7;
+}
+.img_portada2{
+    width: 75%;
+    margin-left: 20%;
+    padding: 5%;
+}
+
+.texto{
+    margin-right: 10%;
+    font-family:'Nuosu SIL', serif; 
+}
+.titulo1{
+    text-decoration: none;
+    font-family:'Playfair Display SC', serif;
+}    
+.container1 {
+	position: relative;
+	width: 50%;
+	&:hover {
+		.overlay {
+			opacity: 1;
+		}
+	}
+}
+.image {
+	display: block;
+    @include medidas(150%,auto);
+    margin-bottom: 10%;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    @include medidas(150%,100%);
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #c0bbb7;
+}
+.text2 {
+    @include font ($fontFamily3,auto,$fontColor2);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.h5_titulo{
+    text-align: center;
+    @include font ($fontFamily3,150%,black);
+}
+.div_marg{
+    margin-left: 9%;
+}
+.centered {
+    @include medidas(60%,10%);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    filter: opacity(0.7) ;
+    text-align: center; 
+}
+.h5_main{
+    @include font ($fontFamily3,200%,black);
+}
+
 
 /*MAIN PRODUCTOS*/
 .img__velas {
-	width: 300px;
-	height: 300px;
+    @include medidas(300px,300px);
 	transition: all .5s;
 	margin-top: 5%;
 	&:hover {
@@ -62,20 +187,54 @@
 	}
 }
 
-/*MAIN LOCALES*/
-.slogan2{
-    background-color:$fontColor;
+.img__prod{
+    @include medidas(100%,100%) 
+}
+.intro_vela{
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 250%;
+    color:  #fff9ed;
+
+}
+.intro_vela1{
+    text-align: center;
+    margin-top: 25%;
+    @include font ($fontFamily3,250%,#fff9ed);
+}
+.intro__vela2{
+    text-align: center;
+    font-size: 100%;
     color: #fff9ed;
+}
+
+
+/*MAIN LOCALES*/
+.intro__locales{
+    @include font ($fontFamily3,auto,#fff9ed);
+    text-align: center;
+    margin-top: 20%;
+}
+.intro__locales2{
+    @include font ($fontFamily3,auto,#fff9ed);
+    text-align: center;
+    padding: 5%;
+
+}
+.section__div_locales{
+    background-color: #c0bbb7;
+}
+.slogan2{
+    @include font ($fontFamily,auto,#fff9ed);
+    background-color:#c0bbb7;
     height: 10%;
-    font-family:$fontFamily;
     animation-duration: 2s;
     animation-name: aparecer;
-    animation-iteration-count: 1 ;
+    animation-iteration-count: 1;
 }
 .div__loc{
+    @include font ($fontFamily,auto,white);
     background-color: #b7a597;
-    color: white;
-    font-family:$fontFamily;
 }
 .try{
     margin-left: 13%;
@@ -91,24 +250,26 @@
     padding-bottom: 5%;
     .try4{
         background-color: #792f2f;
-        color: white;
+        @include font ($fontFamily,auto,#fff9ed);
         text-align: center;
-        font-family:$fontFamily;
     }
 }
 .try2{
     background-color: #4f954f;
-    color: white;
+    @include font ($fontFamily,auto,#fff9ed);
     text-align: center;
-    font-family:$fontFamily;
 }
+.local1{
+    @include medidas(100%,100%)
+}
+
+
 
 
 /*MAIN LOGIN*/
 .principal{
     background-color:$fontColor;
-    color: #fff9ed;
-    font-family:$fontFamily;
+    @include font ($fontFamily,auto,#fff9ed);
     text-align: center;
 }
 .img__log{
@@ -121,8 +282,7 @@
     margin-left: 25%;   
     .prueba2{
         background-color: #96887d;
-        color: white;
-        font-family:'Cormorant Garamond', serif;
+        @include font ($fontFamily4,auto,white);
     }
 }
 

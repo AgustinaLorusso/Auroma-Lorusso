@@ -1,21 +1,70 @@
-/*ESTILOS COMPARTIDOS*/
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap");
+/*HEADER*/
+.color {
+  background-color: #e6dbd1; }
+  .color .logo {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 150%; }
+  .color .div__nav {
+    margin-left: 30%; }
+    .color .div__nav .colorF {
+      font-family: 'Playfair Display SC', serif;
+      color: black;
+      letter-spacing: 2px; }
+
+/*FOOTER*/
+.colorFot {
+  background-color: #e6dbd1; }
+  .colorFot .div__fot {
+    text-align: center;
+    font-family: "Nuosu SIL", serif; }
+    .colorFot .div__fot .div__fot2 {
+      margin-left: 5%; }
+      .colorFot .div__fot .div__fot2 .div__a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #4e443c; }
+
+.logito {
+  color: #4e443c; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*ESTILOS COMPARTIDOS*/
 .main {
-  background-image: linear-gradient(to bottom, #fff9ed, #fef5e9, #fcf2e4, #fbeee0, #faeadc, #ddcfc2, #dfcbbc, #dac8ba, #d3c2b5, #c4b4a7, #b5a599); }
+  background-color: #e6dbd1; }
 
 .portada {
   width: 100%;
   height: 85vh; }
 
 .slogan {
-  background-color: color(#837367);
-  color: #fff9ed;
-  margin-top: 7%;
-  height: 10%;
-  font-family: font-family("Cormorant Garamond", serif);
+  background-color: #c0bbb7;
+  font-family: "Nuosu SIL", serif;
+  font-size: auto;
+  color: #30190e;
+  width: 40%;
+  height: 15%;
+  margin-top: 10%;
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: 1; }
+
+.portada1 {
+  width: 95vw;
+  height: 65vh;
+  background-color: #ab9d95; }
+
+.portada2 {
+  width: 95vw;
+  height: 50vh;
+  background-color: #ab9d95; }
 
 /*EFECTOS*/
 @keyframes aparecer {
@@ -28,19 +77,138 @@
 .video {
   width: 90%; }
 
-.introduccion {
-  width: 100%;
+.img_portada {
+  width: 80%;
+  padding-top: 5%;
+  margin-left: 10%; }
+
+.texto_publi1 .core, .texto_publi1 .devil {
+  text-align: start;
+  margin-left: 10%;
+  font-family: "Playfair Display SC", serif;
+  font-size: auto;
+  color: #30190e; }
+  .texto_publi1 .core hr.style1, .texto_publi1 .devil hr.style1 {
+    border-top: 1px solid #30190e; }
+  .texto_publi1 .core .core_font, .texto_publi1 .devil .core_font {
+    font-size: 300%; }
+
+.texto_publi1 .devil {
+  color: black; }
+  .texto_publi1 .devil hr.style2 {
+    border-top: 1px solid  black; }
+  .texto_publi1 .devil .devil_font {
+    font-size: 300%; }
+
+.texto_publi1 .detalle {
   text-align: center;
-  margin-left: 5%;
-  padding-bottom: 5%; }
-  .introduccion .texto {
-    margin-right: 10%;
-    color: color(#4e443c);
-    font-family: font-family("Cormorant Garamond", serif); }
-  .introduccion .titulo1 {
-    text-decoration: none;
-    color: color(#4e443c);
-    font-family: font-family("Cormorant Garamond", serif); }
+  margin-top: 5%; }
+  .texto_publi1 .detalle .text_det {
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+    color: #30190e;
+    padding-left: 10%; }
+  .texto_publi1 .detalle .button_det {
+    width: 30%;
+    font-family: "Playfair Display SC", serif;
+    font-size: larger;
+    color: white;
+    background-color: #30190e;
+    border-radius: 5%;
+    margin-top: 10%; }
+  .texto_publi1 .detalle .text_det2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+    color: black;
+    padding-left: 10%; }
+  .texto_publi1 .detalle .button_det2 {
+    font-family: "Playfair Display SC", serif;
+    font-size: larger;
+    color: white;
+    margin-top: 10%;
+    width: 30%;
+    background-color: black;
+    border-radius: 5%; }
+
+.publi1 {
+  background-color: #cdc2bc; }
+
+.publi2 {
+  background-color: #c0bbb7; }
+
+.img_portada2 {
+  width: 75%;
+  margin-left: 20%;
+  padding: 5%; }
+
+.texto {
+  margin-right: 10%;
+  font-family: 'Nuosu SIL', serif; }
+
+.titulo1 {
+  text-decoration: none;
+  font-family: 'Playfair Display SC', serif; }
+
+.container1 {
+  position: relative;
+  width: 50%; }
+  .container1:hover .overlay {
+    opacity: 1; }
+
+.image {
+  display: block;
+  width: 150%;
+  height: auto;
+  margin-bottom: 10%; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 150%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #c0bbb7; }
+
+.text2 {
+  font-family: "Playfair Display SC", serif;
+  font-size: auto;
+  color: #4e443c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.h5_titulo {
+  text-align: center;
+  font-family: "Playfair Display SC", serif;
+  font-size: 150%;
+  color: black; }
+
+.div_marg {
+  margin-left: 9%; }
+
+.centered {
+  width: 60%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  filter: opacity(0.7);
+  text-align: center; }
+
+.h5_main {
+  font-family: "Playfair Display SC", serif;
+  font-size: 200%;
+  color: black; }
 
 /*MAIN PRODUCTOS*/
 .img__velas {
@@ -51,20 +219,61 @@
   .img__velas:hover {
     transform: scale(1.1); }
 
+.img__prod {
+  width: 100%;
+  height: 100%; }
+
+.intro_vela {
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: 250%;
+  color: #fff9ed; }
+
+.intro_vela1 {
+  text-align: center;
+  margin-top: 25%;
+  font-family: "Playfair Display SC", serif;
+  font-size: 250%;
+  color: #fff9ed; }
+
+.intro__vela2 {
+  text-align: center;
+  font-size: 100%;
+  color: #fff9ed; }
+
 /*MAIN LOCALES*/
-.slogan2 {
-  background-color: color(#837367);
+.intro__locales {
+  font-family: "Playfair Display SC", serif;
+  font-size: auto;
   color: #fff9ed;
+  text-align: center;
+  margin-top: 20%; }
+
+.intro__locales2 {
+  font-family: "Playfair Display SC", serif;
+  font-size: auto;
+  color: #fff9ed;
+  text-align: center;
+  padding: 5%; }
+
+.section__div_locales {
+  background-color: #c0bbb7; }
+
+.slogan2 {
+  font-family: "Nuosu SIL", serif;
+  font-size: auto;
+  color: #fff9ed;
+  background-color: #c0bbb7;
   height: 10%;
-  font-family: font-family("Cormorant Garamond", serif);
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: 1; }
 
 .div__loc {
-  background-color: #b7a597;
+  font-family: "Nuosu SIL", serif;
+  font-size: auto;
   color: white;
-  font-family: font-family("Cormorant Garamond", serif); }
+  background-color: #b7a597; }
 
 .try {
   margin-left: 13%; }
@@ -78,21 +287,28 @@
   padding-bottom: 5%; }
   .local2 .try4 {
     background-color: #792f2f;
-    color: white;
-    text-align: center;
-    font-family: font-family("Cormorant Garamond", serif); }
+    font-family: "Nuosu SIL", serif;
+    font-size: auto;
+    color: #fff9ed;
+    text-align: center; }
 
 .try2 {
   background-color: #4f954f;
-  color: white;
-  text-align: center;
-  font-family: font-family("Cormorant Garamond", serif); }
+  font-family: "Nuosu SIL", serif;
+  font-size: auto;
+  color: #fff9ed;
+  text-align: center; }
+
+.local1 {
+  width: 100%;
+  height: 100%; }
 
 /*MAIN LOGIN*/
 .principal {
-  background-color: color(#837367);
+  background-color: #837367;
+  font-family: "Nuosu SIL", serif;
+  font-size: auto;
   color: #fff9ed;
-  font-family: font-family("Cormorant Garamond", serif);
   text-align: center; }
 
 .img__log {
@@ -104,8 +320,9 @@
   margin-left: 25%; }
   .prueba .prueba2 {
     background-color: #96887d;
-    color: white;
-    font-family: 'Cormorant Garamond', serif; }
+    font-family: "Cormorant Garamond", serif;
+    font-size: auto;
+    color: white; }
 
 @media (max-width: 575px) {
   .img__velas {
@@ -190,32 +407,3 @@
     text-align: center;
     margin-left: 10%;
     padding-bottom: 5%; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/*HEADER*/
-.color {
-  background-color: background-color(#fff5ea); }
-  .color .logo {
-    width: 100px;
-    height: 100px; }
-  .color .div__nav {
-    margin-left: 40%; }
-    .color .div__nav .colorF {
-      color: color(#837367);
-      font-family: font-family("Cormorant Garamond", serif);
-      font-weight: bold;
-      font-size: large; }
-
-/*FOOTER*/
-.colorFot {
-  background-color: background-color(#ebd9cb); }
-  .colorFot .div__fot {
-    text-align: center;
-    font-family: font-family("Cormorant Garamond", serif); }
-    .colorFot .div__fot .div__a {
-      text-decoration: none;
-      color: color(#4e443c); }

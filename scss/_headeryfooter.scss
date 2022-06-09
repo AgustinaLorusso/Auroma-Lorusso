@@ -1,0 +1,38 @@
+/*HEADER*/
+.color{
+    background-color:$bgHeader;
+    .logo {
+        font-family:'Playfair Display SC', serif ;
+        font-size: 150%;
+    }
+    .div__nav{
+        margin-left: 30%;
+        .colorF {
+            font-family:'Playfair Display SC', serif ;
+            color: black;
+            letter-spacing: 2px;
+            
+        }
+    }
+}
+
+/*FOOTER*/
+.colorFot{
+    background-color:$bgFooter;
+    .div__fot{
+        text-align: center;
+        font-family:$fontFamily;
+        .div__fot2{
+            margin-left: 5%;
+            .div__a {
+                font-weight: bold;
+                text-decoration: none;
+                color: $fontColor2;
+            } 
+        }
+         
+    }
+}
+.logito{
+    color:$fontColor2;
+}

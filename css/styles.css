@@ -38,33 +38,8 @@
 
 /*ESTILOS COMPARTIDOS*/
 .main {
-  background-color: #e6dbd1; }
-
-.portada {
-  width: 100%;
-  height: 85vh; }
-
-.slogan {
-  background-color: #c0bbb7;
-  font-family: "Nuosu SIL", serif;
-  font-size: auto;
-  color: #30190e;
-  width: 40%;
-  height: 15%;
-  margin-top: 10%;
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: 1; }
-
-.portada1 {
-  width: 95vw;
-  height: 65vh;
-  background-color: #ab9d95; }
-
-.portada2 {
-  width: 95vw;
-  height: 50vh;
-  background-color: #ab9d95; }
+  background-color: #e6dbd1;
+  overflow-x: hidden; }
 
 /*EFECTOS*/
 @keyframes aparecer {
@@ -74,192 +49,134 @@
     opacity: 1; } }
 
 /*MAIN INDEX*/
+/*Portada*/
+.carousel_1 {
+  width: 100%;
+  height: 85vh;
+  background-color: #cdc2bc; }
+  .carousel_1 .img_portada {
+    width: 500px; }
+
+.carousel_2 {
+  width: 100%;
+  height: 85vh;
+  background-color: #c0bbb7; }
+  .carousel_2 .img_portada2 {
+    width: 500px;
+    height: 450px;
+    margin-top: 6%; }
+
+.texto_portada {
+  /*Estilos Portada1*/
+  /*Estilos Portada2*/
+  /*Estilos Detalles*/ }
+  .texto_portada .coresix_estilos hr.borde1_estilo {
+    border-top: 1px solid #30190e; }
+  .texto_portada .coresix_estilos .core_font {
+    font-family: "Playfair Display SC", serif;
+    font-size: 300%;
+    color: #30190e;
+    text-align: start; }
+  .texto_portada .devilsnight_estilos hr.borde2_estilo {
+    border-top: 1px solid  black; }
+  .texto_portada .devilsnight_estilos .devil_font {
+    font-family: "Playfair Display SC", serif;
+    font-size: 300%;
+    color: black;
+    text-align: start; }
+  .texto_portada .detalle {
+    text-align: center; }
+    .texto_portada .detalle .texto_detalle, .texto_portada .detalle .texto_detalle2 {
+      font-family: "Nuosu SIL", serif;
+      font-size: large;
+      color: #30190e; }
+    .texto_portada .detalle .button_detalle, .texto_portada .detalle .button_detalle2 {
+      background-color: #30190e;
+      border-radius: 5%;
+      width: 30%;
+      font-family: "Playfair Display SC", serif;
+      font-size: medium;
+      color: white; }
+    .texto_portada .detalle .texto_detalle2 {
+      color: black; }
+    .texto_portada .detalle .button_detalle2 {
+      background-color: black; }
+
+/*Section 1*/
 .video {
   width: 90%; }
 
-.img_portada {
-  width: 80%;
-  padding-top: 5%;
-  margin-left: 10%; }
-
-.texto_publi1 .core, .texto_publi1 .devil {
-  text-align: start;
-  margin-left: 10%;
-  font-family: "Playfair Display SC", serif;
-  font-size: auto;
-  color: #30190e; }
-  .texto_publi1 .core hr.style1, .texto_publi1 .devil hr.style1 {
-    border-top: 1px solid #30190e; }
-  .texto_publi1 .core .core_font, .texto_publi1 .devil .core_font {
-    font-size: 300%; }
-
-.texto_publi1 .devil {
-  color: black; }
-  .texto_publi1 .devil hr.style2 {
-    border-top: 1px solid  black; }
-  .texto_publi1 .devil .devil_font {
-    font-size: 300%; }
-
-.texto_publi1 .detalle {
-  text-align: center;
-  margin-top: 5%; }
-  .texto_publi1 .detalle .text_det {
-    font-family: "Open Sans", sans-serif;
-    font-size: large;
-    color: #30190e;
-    padding-left: 10%; }
-  .texto_publi1 .detalle .button_det {
-    width: 30%;
-    font-family: "Playfair Display SC", serif;
-    font-size: larger;
-    color: white;
-    background-color: #30190e;
-    border-radius: 5%;
-    margin-top: 10%; }
-  .texto_publi1 .detalle .text_det2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: large;
-    color: black;
-    padding-left: 10%; }
-  .texto_publi1 .detalle .button_det2 {
-    font-family: "Playfair Display SC", serif;
-    font-size: larger;
-    color: white;
-    margin-top: 10%;
-    width: 30%;
-    background-color: black;
-    border-radius: 5%; }
-
-.publi1 {
-  background-color: #cdc2bc; }
-
-.publi2 {
-  background-color: #c0bbb7; }
-
-.img_portada2 {
-  width: 75%;
-  margin-left: 20%;
-  padding: 5%; }
-
-.texto {
-  margin-right: 10%;
-  font-family: 'Nuosu SIL', serif; }
-
-.titulo1 {
+.titulo_main {
   text-decoration: none;
-  font-family: 'Playfair Display SC', serif; }
+  font-family: "Playfair Display SC", serif; }
 
-.container1 {
-  position: relative;
-  width: 50%; }
-  .container1:hover .overlay {
-    opacity: 1; }
-
-.image {
-  display: block;
-  width: 150%;
-  height: auto;
-  margin-bottom: 10%; }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 150%;
-  height: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #c0bbb7; }
-
-.text2 {
-  font-family: "Playfair Display SC", serif;
+.texto1_main {
+  font-family: "Nuosu SIL", serif;
   font-size: auto;
-  color: #4e443c;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.h5_titulo {
-  text-align: center;
-  font-family: "Playfair Display SC", serif;
-  font-size: 150%;
   color: black; }
 
-.div_marg {
-  margin-left: 9%; }
-
-.centered {
-  width: 60%;
-  height: 10%;
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  filter: opacity(0.7);
-  text-align: center; }
-
-.h5_main {
-  font-family: "Playfair Display SC", serif;
-  font-size: 200%;
-  color: black; }
+/*Section 2*/
+.section2_main {
+  background-color: #cdc2bc; }
+  .section2_main .titulo__section2 {
+    text-align: center;
+    font-family: "Playfair Display SC", serif;
+    font-size: 150%;
+    color: black; }
+  .section2_main .imagen_section2 {
+    display: block;
+    width: 400px;
+    height: 400px; }
+  .section2_main .container__section2 {
+    position: relative;
+    width: 50%; }
+    .section2_main .container__section2:hover .overlay {
+      opacity: 1; }
+    .section2_main .container__section2 .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #c0bbb7;
+      width: 400px;
+      height: 400px; }
+      .section2_main .container__section2 .overlay .texto__section2 {
+        font-family: "Playfair Display SC", serif;
+        font-size: auto;
+        color: #4e443c;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center; }
 
 /*MAIN PRODUCTOS*/
-.img__velas {
-  width: 300px;
-  height: 300px;
-  transition: all .5s;
-  margin-top: 5%; }
-  .img__velas:hover {
-    transform: scale(1.1); }
+/*Portada*/
+.portada__productos {
+  width: 95vw;
+  height: 65vh;
+  background-color: #ab9d95; }
+  .portada__productos .intro_vela1 {
+    text-align: center;
+    margin-top: 25%;
+    font-family: "Playfair Display SC", serif;
+    font-size: 250%;
+    color: #fff9ed; }
+  .portada__productos .intro__vela2 {
+    text-align: center;
+    font-size: 100%;
+    color: #fff9ed; }
+  .portada__productos .img__productos {
+    width: 100%;
+    height: 100%; }
 
-.img__prod {
-  width: 100%;
-  height: 100%; }
-
-.intro_vela {
-  text-align: center;
-  margin-bottom: 1%;
-  font-size: 250%;
-  color: #fff9ed; }
-
-.intro_vela1 {
-  text-align: center;
-  margin-top: 25%;
-  font-family: "Playfair Display SC", serif;
-  font-size: 250%;
-  color: #fff9ed; }
-
-.intro__vela2 {
-  text-align: center;
-  font-size: 100%;
-  color: #fff9ed; }
-
-/*MAIN LOCALES*/
-.intro__locales {
-  font-family: "Playfair Display SC", serif;
-  font-size: auto;
-  color: #fff9ed;
-  text-align: center;
-  margin-top: 20%; }
-
-.intro__locales2 {
-  font-family: "Playfair Display SC", serif;
-  font-size: auto;
-  color: #fff9ed;
-  text-align: center;
-  padding: 5%; }
-
-.section__div_locales {
-  background-color: #c0bbb7; }
-
-.slogan2 {
+/*Titulo de Colecciones*/
+.titulos {
   font-family: "Nuosu SIL", serif;
   font-size: auto;
   color: #fff9ed;
@@ -268,40 +185,98 @@
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: 1; }
+  .titulos .intro_vela {
+    text-align: center;
+    font-size: 250%;
+    color: #fff9ed; }
 
-.div__loc {
-  font-family: "Nuosu SIL", serif;
-  font-size: auto;
-  color: white;
-  background-color: #b7a597; }
+/*Productos*/
+.img__velas {
+  width: 300px;
+  height: 300px;
+  transition: all .5s;
+  margin-top: 5%; }
+  .img__velas:hover {
+    transform: scale(1.1); }
 
-.try {
-  margin-left: 13%; }
-  .try .try3 {
+/*MAIN LOCALES*/
+/*Portada Locales*/
+.portada_locales {
+  width: 95vw;
+  height: 50vh;
+  background-color: #ab9d95; }
+  .portada_locales .intro__locales {
+    font-family: "Playfair Display SC", serif;
+    font-size: auto;
+    color: #fff9ed;
+    text-align: center;
+    margin-top: 20%; }
+  .portada_locales .intro__locales2 {
+    font-family: "Playfair Display SC", serif;
+    font-size: auto;
+    color: #fff9ed;
+    text-align: center;
+    padding: 5%; }
+
+/*Locales*/
+.section__locales {
+  background-color: #c0bbb7; }
+  .section__locales .div__local {
+    margin-left: 13%; }
+    .section__locales .div__local .try3 {
+      text-align: center; }
+      .section__locales .div__local .try3 .horarios {
+        font-weight: bold; }
+  .section__locales .img__local {
+    width: 550px;
+    height: 550px; }
+  .section__locales .local_1 {
+    background-color: #4f954f;
+    font-family: "Nuosu SIL", serif;
+    font-size: auto;
+    color: #fff9ed;
     text-align: center; }
-    .try .try3 .horarios {
+  .section__locales .datos__locales {
+    text-align: center; }
+    .section__locales .datos__locales .horarios {
       font-weight: bold; }
-
-.local2 {
-  margin-top: 5%;
-  padding-bottom: 5%; }
-  .local2 .try4 {
+  .section__locales .local_2 {
     background-color: #792f2f;
     font-family: "Nuosu SIL", serif;
     font-size: auto;
     color: #fff9ed;
     text-align: center; }
 
-.try2 {
-  background-color: #4f954f;
+/*MAIN CONTACTO*/
+/*Portada*/
+.portada_contacto {
+  width: 100%;
+  height: 85vh; }
+
+/*Introduccion*/
+.intro_contacto {
+  width: 100%;
+  height: 15%;
   font-family: "Nuosu SIL", serif;
   font-size: auto;
-  color: #fff9ed;
-  text-align: center; }
+  color: white;
+  background-color: #ab9d95;
+  margin-top: 10%; }
 
-.local1 {
-  width: 100%;
-  height: 100%; }
+.intro_contacto2 {
+  font-family: "Nuosu SIL", serif;
+  font-size: auto;
+  color: black; }
+
+/*Formulario*/
+.prueba {
+  width: 50%;
+  margin-left: 25%; }
+  .prueba .prueba2 {
+    background-color: #96887d;
+    font-family: "Nuosu SIL", serif;
+    font-size: auto;
+    color: white; }
 
 /*MAIN LOGIN*/
 .principal {
@@ -312,19 +287,25 @@
   text-align: center; }
 
 .img__log {
-  width: auto; }
-
-/*MAIN CONTACTO*/
-.prueba {
-  width: 50%;
-  margin-left: 25%; }
-  .prueba .prueba2 {
-    background-color: #96887d;
-    font-family: "Cormorant Garamond", serif;
-    font-size: auto;
-    color: white; }
+  width: 400px;
+  height: 400px; }
 
 @media (max-width: 575px) {
+  /*index*/
+  .carousel_1 {
+    width: 100%;
+    height: auto;
+    background-color: #cdc2bc; }
+    .carousel_1 .img_portada {
+      display: none; }
+  .texto_portada .core_font {
+    font-family: "Playfair Display SC", serif;
+    font-size: 100%;
+    color: #30190e;
+    text-align: center; }
+  .section__locales .img__local {
+    width: 300px;
+    height: 300px; }
   .img__velas {
     width: 100px;
     height: 100px; }
@@ -348,9 +329,21 @@
   .img__log {
     display: none; }
   .back {
-    background-image: url(./assets/img/margen1.jpg); } }
+    background-image: url(./assets/img/margen1.jpg); }
+  .portada_locales {
+    width: 95vw;
+    height: auto; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .section__locales .img__local {
+    width: 400px;
+    height: 400px; }
+  .carousel_1 {
+    width: 100%;
+    height: auto;
+    background-color: #cdc2bc; }
+    .carousel_1 .img_portada {
+      display: none; }
   .img__velas {
     width: 200px;
     height: 200px; }
@@ -372,7 +365,10 @@
   .header__otros {
     display: none; }
   .img__log {
-    display: none; } }
+    display: none; }
+  .portada_locales {
+    width: 95vw;
+    height: auto; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .img__velas {

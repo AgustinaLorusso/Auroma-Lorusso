@@ -1,6 +1,25 @@
 
 @media (max-width: 575px){
+    /*index*/
+    .carousel_1{
+        @include portada (100%,auto,#cdc2bc);
+        .img_portada{
+            display:none;
+        }
+    }
+    .texto_portada{
+        .core_font{
+            @include font ($fontFamily3,100%,#30190e);
+            text-align: center;
+        }
 
+    }
+    .section__locales{
+        .img__local{
+            @include medidas(300px,300px)
+        }
+    }
+    
     .img__velas{
         width: 100px;
         height: 100px; 
@@ -34,10 +53,22 @@
     .back{
         background-image: url(./assets/img/margen1.jpg);
     }
-
+    .portada_locales{
+        @include medidas(95vw,auto);
+    }
 }
 @media (min-width: 576px) and (max-width: 767px){
-    
+    .section__locales{
+        .img__local{
+            @include medidas(400px,400px)
+        }
+    }
+    .carousel_1{
+        @include portada (100%,auto,#cdc2bc);
+        .img_portada{
+            display:none;
+        }
+    }
     .img__velas{
         width: 200px;
         height: 200px; 
@@ -68,6 +99,9 @@
 
     .img__log{
         display: none;
+    }
+    .portada_locales{
+        @include medidas(95vw,auto);
     }
   
 

@@ -8,3 +8,9 @@
     font-size: $font-size;
     color: $font-color;
 }
+
+@mixin portada ($ancho_portada,$alto_portada,$color_fondo) {
+    width: $ancho_portada;
+    height: $alto_portada;
+    background-color: $color_fondo;
+}

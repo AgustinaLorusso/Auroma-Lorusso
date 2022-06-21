@@ -29,10 +29,9 @@
 }
 .carousel_2{
     @include portada (100%,85vh,#c0bbb7);
-    .img_portada2{
+    .img_portada{
+        @include medidas (500px,500px);
         width: 500px;
-        height: 450px;
-        margin-top: 6%;
     }
 }
 .texto_portada{
@@ -230,9 +229,24 @@
 /*MAIN CONTACTO*/
 
 /*Portada*/
-.portada_contacto{
-    @include medidas (100%,85vh)
+.portada__contacto{
+    @include medidas(95vw,auto);
+    background-color:map-get($mapa-colores,marron);
+    .intro_vela1{
+        text-align: center;
+        margin-top: 25%;
+        @include font ($fontFamily3,250%,#fff9ed);
+    }
+    .intro__vela2{
+        text-align: center;
+        font-size: 100%;
+        color: #fff9ed;
+    } 
+    .img__contacto{
+        @include medidas(100%,auto) 
+    } 
 }
+
 /*Introduccion*/
 .intro_contacto{
     @include medidas (100%,15%);
@@ -244,7 +258,7 @@
     @include font ($fontFamily,auto,black);
 }
 /*Formulario*/
-.prueba{
+.form_contacto{
     width: 50%;
     margin-left: 25%;   
     .prueba2{

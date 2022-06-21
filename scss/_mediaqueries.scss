@@ -1,16 +1,52 @@
 
 @media (max-width: 575px){
-    /*index*/
+    .logo{
+        text-align: center;
+    }
+    /*INDEX*/
+    /*Portada*/
     .carousel_1{
         @include portada (100%,auto,#cdc2bc);
         .img_portada{
-            display:none;
+            @include medidas (450px,400px);
+            padding: 10%;
+            margin-left: 3%;
+            
         }
     }
     .texto_portada{
+        margin-top: 5%;
         .core_font{
             @include font ($fontFamily3,100%,#30190e);
             text-align: center;
+        }
+
+    }
+    /*Section 1*/
+    .video{
+        width: 70%;
+        margin-left: 17%;
+    }
+    .introduccion{
+        width: 100%;
+        text-align: center;
+        margin-left: 5%;
+        padding-bottom: 5%;
+    }
+    /*Seccion 2*/
+    .section2_main{
+        .imagen_section2 {
+            display: block;
+            @include medidas(300px,300px);
+            margin-left: 25%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .container__section2{
+            .overlay{
+                @include medidas(300px,300px);
+                margin-left: 25%;
+            }
         }
 
     }
@@ -19,70 +55,98 @@
             @include medidas(300px,300px)
         }
     }
-    
+    /*PRODUCTOS*/
+    /*Portada*/
+    .portada__productos{
+        @include medidas(auto,auto);
+        margin-right: 3%;
+        .intro__vela2{
+            margin-bottom: 25%;
+        }
+        .img__productos{
+            @include medidas(90%,90%) 
+        } 
+    }
+    /*Section 1*/
     .img__velas{
-        width: 100px;
-        height: 100px; 
+        @include medidas(200px,200px);
     } 
-    .portada{
-        height: 50vh;  
+     /*LOGIN*/
+     .img__log{
+        display: none;
     }
-    .slogan{
-        height:17%;
+    .form_login{
+        @include medidas(70vw,auto)
     }
-    .prueba{
+    /*LOCALES*/
+    .portada_locales{
+        @include medidas(80vw,auto);
+        margin-left: 9%;
+        .intro__locales{
+           margin-bottom: 10%; 
+        }
+    }
+    /*Locales*/
+   .section__locales{
+     .img__local{
+        @include medidas(300px,350px)
+     }
+     .local_1{
+        margin-top: 10%; 
+     }
+     .local_2{
+        margin-top: 10%;
+     }
+    }
+
+    /*COTACTO*/
+    /*Portada*/
+    .portada__contacto{
+        @include medidas(auto,auto);
+        margin-right: 3%;
+        .intro__vela2{
+            margin-bottom: 25%;
+        }
+        .img__contacto{
+            @include medidas(100%,100%); 
+        } 
+    }
+    .form_contacto{
         margin-left: 5%;
         width: 90%;    
     } 
-    .video{
-        width: 70%;
-        margin-left: 17%;
-    }
-    .introduccion{
-        width: 100%;
-        text-align: center;
-        margin-left: 5%;
-        padding-bottom: 5%;
-    }
+    
     .header__otros{
         display: none;
-    }
-    .img__log{
-        display: none;
-    }
-    .back{
-        background-image: url(./assets/img/margen1.jpg);
-    }
-    .portada_locales{
-        @include medidas(95vw,auto);
     }
 }
 @media (min-width: 576px) and (max-width: 767px){
-    .section__locales{
-        .img__local{
-            @include medidas(400px,400px)
-        }
-    }
+    /*INDEX*/
+    /*Portada*/
     .carousel_1{
         @include portada (100%,auto,#cdc2bc);
         .img_portada{
-            display:none;
+            @include medidas (100%,100%);  
         }
     }
-    .img__velas{
-        width: 200px;
-        height: 200px; 
+    .texto_portada{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .coresix_estilos{
+            .core_font{
+                @include font ($fontFamily3,250%,#30190e);
+            }
+        }
+        .devilsnight_estilos{
+            .devil_font{
+                @include font ($fontFamily3,10%,black);
+                 
+            }
+        }
+       
+
     }
-    .portada{
-        height: 60vh;  
-    }
-    .slogan{
-        height: 15%;
-    }
-    .prueba{
-        margin-left: 10%;
-        width: 80%;    
-    } 
+    /*Section 1*/
     .video{
         width: 70%;
         margin-left: 17%;
@@ -93,40 +157,196 @@
         margin-left: 5%;
         padding-bottom: 5%;
     }
-    .header__otros{
-        display: none;
+     /*Seccion 2*/
+    .section2_main{
+        .imagen_section2 {
+            display: block;
+            @include medidas(400px,400px);
+            margin-left: 45%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .container__section2{
+            .overlay{
+                @include medidas(400px,400px);
+                margin-left: 45%;
+            }
+        }
+    
     }
 
-    .img__log{
-        display: none;
+    /*PRODUCTOS*/
+    /*Portada*/
+    .portada__productos{
+        @include medidas(auto,auto);
+        margin-right: 3%;
+        .intro_vela1{
+            margin-top: 35%;
+        }
+        .img__productos{
+            @include medidas(90%,90%) 
+        } 
     }
+    /*Section 1*/
+    .img__velas{
+        @include medidas(250px,250px);
+    } 
+
+    /*LOGIN*/
+    .img__log{
+      display: none; 
+    }
+    .form_login{
+        @include medidas(70vw,auto)
+    }
+    /*LOCALES*/
     .portada_locales{
         @include medidas(95vw,auto);
+        margin-left: 1%;
+        .intro__locales{
+           margin-bottom: 5%; 
+        }
     }
-  
-
-}
-@media (min-width: 768px) and (max-width: 991px){
-    
-    .img__velas{
-        width:200px;
-        height:200px; 
+    /*Locales*/
+   .section__locales{
+     .img__local{
+        @include medidas(400px,400px);
+        margin-left:9%;
+     }
+     .local_1{
+        margin-top: 10%; 
+     }
+     .local_2{
+        margin-top: 10%;
+     }
     }
-
-    .prueba{
+    /*CONTACTO*/
+    .portada__contacto{
+        @include medidas(auto,auto);
+        margin-right: 3%;
+        .intro__vela2{
+            margin-bottom: 25%;
+        }
+        .img__contacto{
+            @include medidas(100%,100%) 
+        } 
+    }
+    .form_contacto{
         margin-left: 10%;
         width: 80%;    
     } 
+    
+    .header__otros{
+        display: none;
+    }
+  
+}
+@media (min-width: 768px) and (max-width: 991px){
+        /*INDEX*/
+    /*Portada*/
+    .carousel_1{
+        @include portada (100%,auto,#cdc2bc);
+        .img_portada{
+            @include medidas (100%,100%);  
+        }
+    }
+    .texto_portada{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .coresix_estilos{
+            .core_font{
+                @include font ($fontFamily3,250%,#30190e);
+            }
+        }
+    }
+    /*Seccion 1*/
+    .titulo_main{
+        margin-top: 5%;
+    }
     .video{
         width: 70%;
         margin-left:18%;
     }
-    .introduccion{
-        width: 90%;
-        text-align: center;
-        margin-left: 10%;
-        padding-bottom: 5%;
+    /*Seccion 2*/
+    .section2_main{
+        .imagen_section2 {
+            display: block;
+            @include medidas(250px,250px);
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .container__section2{
+            .overlay{
+                @include medidas(250px,250px);
+                .texto__section2 {
+                    @include font ($fontFamily3,80%,$fontColor2);
+                }
+            }
+        }
+    
     }
+    
+    /*PRODUCTOS*/
+    /*Portada*/
+    .portada__productos{
+        @include medidas(auto,auto);
+        margin-right: 3%;
+        .intro_vela1{
+            margin-top: 35%;
+        }
+        .img__productos{
+            @include medidas(90%,90%) 
+        } 
+    }
+    /*Section 1*/
+    .img__velas{
+        @include medidas(250px,250px);
+    } 
+    /*LOGIN*/
+    .img__log{
+        @include medidas(300px,350px);
+      
+    }
+
+    /*LOCALES*/
+    .portada_locales{
+        @include medidas(90vw,auto);
+        margin-left: 4%;
+        .intro__locales{
+           margin-bottom: 5%; 
+        }
+    }
+    /*Locales*/
+   .section__locales{
+     .img__local{
+        @include medidas(450px,450px);
+        margin-left:10%;
+     }
+     .local_1{
+        margin-top: 10%; 
+     }
+     .local_2{
+        margin-top: 10%;
+     }
+    }
+    /*CONTACTO*/
+    /*Portada*/
+    .portada__contacto{
+        @include medidas(auto,auto);
+        margin-right: 3%;
+        .intro__vela2{
+            margin-bottom: 25%;
+        }
+        .img__contacto{
+            @include medidas(100%,100%) 
+        } 
+    }
+    .form_contacto{
+        margin-left: 10%;
+        width: 80%;    
+    } 
+    
+    
 
     .header__otros{
         display: none;
@@ -136,24 +356,85 @@
 
 }
 @media (min-width: 992px) and (max-width: 1199px){
-    .img__velas{
-        width:200px;
-        height:200px; 
+    /*Header*/
+    .color{
+        .div__nav{
+            margin-left: 15%;
+        }
+    }
+    /*INDEX*/
+    /*Portada*/
+    .carousel_1{
+        @include portada (100%,90vh,#cdc2bc);
+        .img_portada{
+            @include medidas (400px,400px);  
+        }
+    }
+    /*Seccion 2*/
+    .section2_main{
+        .imagen_section2 {
+            display: block;
+            @include medidas(300px,300px);
+            padding: 5%; 
+        }
+        .container__section2{
+            .overlay{
+                @include medidas(300px,300px);
+                padding: 5%;
+                .texto__section2 {
+                    @include font ($fontFamily3,100%,$fontColor2);
+                }
+            }
+        }
+    
     }
 
-    .prueba{
+    /*PRODUCTOS*/
+    /*Portada*/
+    .portada__productos{
+        @include medidas(auto,auto);
+        margin-right: 3%;
+        .intro_vela1{
+            margin-top: 35%;
+        }
+        .img__productos{
+            @include medidas(90%,90%) 
+        } 
+    }
+    /*Section 1*/
+    .img__velas{
+        @include medidas(250px,250px);
+    } 
+      /*LOGIN*/
+    .img__log{
+        @include medidas(350px,400px);
+        margin: 0%; 
+    }
+     /*LOCALES*/
+     .portada_locales{
+        @include medidas(95vw,auto);
+        .intro__locales{
+           margin-bottom: 5%; 
+        }
+    }
+    /*Locales*/
+   .section__locales{
+     .img__local{
+        @include medidas(450px,500px);
+     }
+     .local_1{
+        margin-left: 10%;
+        padding: 5%; 
+     }
+     .local_2{
+        margin-left: 10%;
+        padding: 35%; 
+     }
+    }
+   /*CONTACTO*/ 
+    .form_contacto{
         margin-left: 10%;
         width: 80%;    
-    } 
-    .video{
-        width: 90%;
-        margin-left:60%;
-    }
-    .introduccion{
-        width: 90%;
-        text-align: center;
-        margin-left: 10%;
-        padding-bottom: 5%;
-    }
+    }   
 
 }

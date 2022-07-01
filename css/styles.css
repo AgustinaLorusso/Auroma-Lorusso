@@ -10,23 +10,46 @@
     font-size: 150%; }
   .color .div__nav {
     margin-left: 30%; }
-    .color .div__nav .colorF {
+    .color .div__nav .link {
+      display: inline-block;
+      position: relative;
       font-family: 'Playfair Display SC', serif;
       color: black;
       letter-spacing: 2px; }
+    .color .div__nav .link::after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #171616;
+      border-radius: 4px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .25s ease; }
+    .color .div__nav .link:hover::after {
+      transform: scaleX(1); }
 
 /*FOOTER*/
 .colorFot {
-  background-color: #e6dbd1; }
+  background-color: #d8cabc; }
   .colorFot .div__fot {
     text-align: center;
     font-family: "Nuosu SIL", serif; }
     .colorFot .div__fot .div__fot2 {
-      margin-left: 5%; }
+      margin-right: 10%; }
       .colorFot .div__fot .div__fot2 .div__a {
         font-weight: bold;
         text-decoration: none;
         color: #4e443c; }
+
+.footer3 {
+  margin-right: 5%; }
+
+.promo {
+  background-color: #e6dbd1;
+  color: black; }
 
 .logito {
   color: #4e443c; }
@@ -55,19 +78,12 @@
   height: 85vh;
   background-color: #cdc2bc; }
   .carousel_1 .img_portada {
-    width: 500px; }
-
-.carousel_2 {
-  width: 100%;
-  height: 85vh;
-  background-color: #c0bbb7; }
-  .carousel_2 .img_portada {
-    width: 500px;
-    height: 500px;
-    width: 500px; }
+    width: 450px;
+    height: 450px; }
 
 .texto_portada {
   /*Estilos Portada1*/
+  margin: 0%;
   /*Estilos Portada2*/
   /*Estilos Detalles*/ }
   .texto_portada .coresix_estilos hr.borde1_estilo {
@@ -91,6 +107,7 @@
       font-size: large;
       color: #30190e; }
     .texto_portada .detalle .button_detalle, .texto_portada .detalle .button_detalle2 {
+      text-decoration: none;
       background-color: #30190e;
       border-radius: 5%;
       width: 30%;
@@ -125,8 +142,8 @@
     color: black; }
   .section2_main .imagen_section2 {
     display: block;
-    width: 400px;
-    height: 400px; }
+    width: 350px;
+    height: 350px; }
   .section2_main .container__section2 {
     position: relative;
     width: 50%; }
@@ -141,8 +158,8 @@
       opacity: 0;
       transition: .5s ease;
       background-color: #c0bbb7;
-      width: 400px;
-      height: 400px; }
+      width: 350px;
+      height: 350px; }
       .section2_main .container__section2 .overlay .texto__section2 {
         font-family: "Playfair Display SC", serif;
         font-size: auto;
@@ -221,17 +238,17 @@
 /*Locales*/
 .section__locales {
   background-color: #c0bbb7; }
-  .section__locales .div__local {
-    margin-left: 13%; }
-    .section__locales .div__local .try3 {
-      text-align: center; }
-      .section__locales .div__local .try3 .horarios {
-        font-weight: bold; }
+  .section__locales .try3 {
+    text-align: center; }
+    .section__locales .try3 .horarios {
+      font-weight: bold; }
   .section__locales .img__local {
-    width: 550px;
-    height: 550px; }
+    width: 500px;
+    height: 500px; }
   .section__locales .local_1 {
+    margin-top: 10%;
     background-color: #4f954f;
+    width: 100%;
     font-family: "Nuosu SIL", serif;
     font-size: auto;
     color: #fff9ed;
@@ -294,7 +311,7 @@
 
 /*MAIN LOGIN*/
 .principal {
-  background-color: #837367;
+  background-color: #ab9d95;
   font-family: "Nuosu SIL", serif;
   font-size: auto;
   color: #fff9ed;
@@ -304,9 +321,22 @@
   width: 400px;
   height: 400px; }
 
+.form__log {
+  width: 100%; }
+
 @media (max-width: 575px) {
+  .main {
+    overflow-x: hidden; }
+  .logito {
+    color: #4e443c; }
+  .main {
+    width: 100%;
+    background-color: #e6dbd1;
+    overflow-x: hidden; }
   .logo {
     text-align: center; }
+  .header__otros1 {
+    display: none; }
   /*INDEX*/
   /*Portada*/
   .carousel_1 {
@@ -314,15 +344,13 @@
     height: auto;
     background-color: #cdc2bc; }
     .carousel_1 .img_portada {
-      width: 450px;
-      height: 400px;
-      padding: 10%;
-      margin-left: 3%; }
+      width: 300px;
+      height: 300px; }
   .texto_portada {
     margin-top: 5%; }
     .texto_portada .core_font {
       font-family: "Playfair Display SC", serif;
-      font-size: 100%;
+      font-size: 50%;
       color: #30190e;
       text-align: center; }
   /*Section 1*/
@@ -338,14 +366,10 @@
   .section2_main .imagen_section2 {
     display: block;
     width: 300px;
-    height: 300px;
-    margin-left: 25%;
-    margin-top: 5%;
-    margin-bottom: 5%; }
+    height: 300px; }
   .section2_main .container__section2 .overlay {
     width: 300px;
-    height: 300px;
-    margin-left: 25%; }
+    height: 300px; }
   .section__locales .img__local {
     width: 300px;
     height: 300px; }
@@ -362,8 +386,9 @@
       height: 90%; }
   /*Section 1*/
   .img__velas {
-    width: 200px;
-    height: 200px; }
+    width: 175px;
+    height: 175px;
+    padding: 5%; }
   /*LOGIN*/
   .img__log {
     display: none; }
@@ -379,12 +404,8 @@
       margin-bottom: 10%; }
   /*Locales*/
   .section__locales .img__local {
-    width: 300px;
-    height: 350px; }
-  .section__locales .local_1 {
-    margin-top: 10%; }
-  .section__locales .local_2 {
-    margin-top: 10%; }
+    width: 250px;
+    height: 250px; }
   /*COTACTO*/
   /*Portada*/
   .portada__contacto {
@@ -400,9 +421,17 @@
     margin-left: 5%;
     width: 90%; }
   .header__otros {
-    display: none; } }
+    display: none; }
+  /*LOGIN*/
+  .form__log {
+    width: auto; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .header__otros1 {
+    display: none; }
+  .main {
+    background-color: #e6dbd1;
+    overflow-x: hidden; }
   /*INDEX*/
   /*Portada*/
   .carousel_1 {
@@ -410,19 +439,14 @@
     height: auto;
     background-color: #cdc2bc; }
     .carousel_1 .img_portada {
-      width: 100%;
-      height: 100%; }
+      width: 300px;
+      height: 300px; }
   .texto_portada {
-    margin-top: 5%;
-    margin-bottom: 5%; }
+    margin-top: 5%; }
     .texto_portada .coresix_estilos .core_font {
       font-family: "Playfair Display SC", serif;
-      font-size: 250%;
+      font-size: 300%;
       color: #30190e; }
-    .texto_portada .devilsnight_estilos .devil_font {
-      font-family: "Playfair Display SC", serif;
-      font-size: 10%;
-      color: black; }
   /*Section 1*/
   .video {
     width: 70%;
@@ -436,14 +460,10 @@
   .section2_main .imagen_section2 {
     display: block;
     width: 400px;
-    height: 400px;
-    margin-left: 45%;
-    margin-top: 5%;
-    margin-bottom: 5%; }
+    height: 400px; }
   .section2_main .container__section2 .overlay {
     width: 400px;
-    height: 400px;
-    margin-left: 45%; }
+    height: 400px; }
   /*PRODUCTOS*/
   /*Portada*/
   .portada__productos {
@@ -457,14 +477,17 @@
       height: 90%; }
   /*Section 1*/
   .img__velas {
-    width: 250px;
-    height: 250px; }
+    width: 200px;
+    height: 200px;
+    padding: 5%; }
   /*LOGIN*/
   .img__log {
     display: none; }
   .form_login {
     width: 70vw;
     height: auto; }
+  .form__log {
+    width: auto; }
   /*LOCALES*/
   .portada_locales {
     width: 95vw;
@@ -475,12 +498,7 @@
   /*Locales*/
   .section__locales .img__local {
     width: 400px;
-    height: 400px;
-    margin-left: 9%; }
-  .section__locales .local_1 {
-    margin-top: 10%; }
-  .section__locales .local_2 {
-    margin-top: 10%; }
+    height: 400px; }
   /*CONTACTO*/
   .portada__contacto {
     width: auto;
@@ -498,22 +516,21 @@
     display: none; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .header__otros1 {
+    display: none; }
   /*INDEX*/
   /*Portada*/
   .carousel_1 {
     width: 100%;
-    height: auto;
+    height: 70vh;
     background-color: #cdc2bc; }
     .carousel_1 .img_portada {
-      width: 100%;
-      height: 100%; }
-  .texto_portada {
-    margin-top: 5%;
-    margin-bottom: 5%; }
-    .texto_portada .coresix_estilos .core_font {
-      font-family: "Playfair Display SC", serif;
-      font-size: 250%;
-      color: #30190e; }
+      width: 275px;
+      height: 275px; }
+  .texto_portada .coresix_estilos .core_font {
+    font-family: "Playfair Display SC", serif;
+    font-size: 200%;
+    color: #30190e; }
   /*Seccion 1*/
   .titulo_main {
     margin-top: 5%; }
@@ -523,13 +540,11 @@
   /*Seccion 2*/
   .section2_main .imagen_section2 {
     display: block;
-    width: 250px;
-    height: 250px;
-    margin-top: 5%;
-    margin-bottom: 5%; }
+    width: 230px;
+    height: 230px; }
   .section2_main .container__section2 .overlay {
-    width: 250px;
-    height: 250px; }
+    width: 230px;
+    height: 230px; }
     .section2_main .container__section2 .overlay .texto__section2 {
       font-family: "Playfair Display SC", serif;
       font-size: 80%;
@@ -551,8 +566,8 @@
     height: 250px; }
   /*LOGIN*/
   .img__log {
-    width: 300px;
-    height: 350px; }
+    width: 250px;
+    height: 300px; }
   /*LOCALES*/
   .portada_locales {
     width: 90vw;
@@ -563,12 +578,7 @@
   /*Locales*/
   .section__locales .img__local {
     width: 450px;
-    height: 450px;
-    margin-left: 10%; }
-  .section__locales .local_1 {
-    margin-top: 10%; }
-  .section__locales .local_2 {
-    margin-top: 10%; }
+    height: 450px; }
   /*CONTACTO*/
   /*Portada*/
   .portada__contacto {
@@ -594,21 +604,19 @@
   /*Portada*/
   .carousel_1 {
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     background-color: #cdc2bc; }
     .carousel_1 .img_portada {
-      width: 400px;
-      height: 400px; }
+      width: 350px;
+      height: 350px; }
   /*Seccion 2*/
   .section2_main .imagen_section2 {
     display: block;
     width: 300px;
-    height: 300px;
-    padding: 5%; }
+    height: 300px; }
   .section2_main .container__section2 .overlay {
     width: 300px;
-    height: 300px;
-    padding: 5%; }
+    height: 300px; }
     .section2_main .container__section2 .overlay .texto__section2 {
       font-family: "Playfair Display SC", serif;
       font-size: 100%;
@@ -642,13 +650,7 @@
   /*Locales*/
   .section__locales .img__local {
     width: 450px;
-    height: 500px; }
-  .section__locales .local_1 {
-    margin-left: 10%;
-    padding: 5%; }
-  .section__locales .local_2 {
-    margin-left: 10%;
-    padding: 35%; }
+    height: 450px; }
   /*CONTACTO*/
   .form_contacto {
     margin-left: 10%;

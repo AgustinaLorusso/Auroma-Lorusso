@@ -1,26 +1,36 @@
 
 @media (max-width: 575px){
+    .main{
+        overflow-x: hidden;
+    }
+    .logito{
+        color:$fontColor2;   
+    }
+    .main{
+        width: 100%;
+        background-color: map-get($mapa-colores,colormains);
+        overflow-x: hidden;
+    }
     .logo{
         text-align: center;
+    }
+    .header__otros1{
+        display: none;
     }
     /*INDEX*/
     /*Portada*/
     .carousel_1{
         @include portada (100%,auto,#cdc2bc);
         .img_portada{
-            @include medidas (450px,400px);
-            padding: 10%;
-            margin-left: 3%;
-            
+            @include medidas (300px,300px);
         }
     }
     .texto_portada{
         margin-top: 5%;
         .core_font{
-            @include font ($fontFamily3,100%,#30190e);
+            @include font ($fontFamily3,50%,#30190e);
             text-align: center;
         }
-
     }
     /*Section 1*/
     .video{
@@ -37,15 +47,11 @@
     .section2_main{
         .imagen_section2 {
             display: block;
-            @include medidas(300px,300px);
-            margin-left: 25%;
-            margin-top: 5%;
-            margin-bottom: 5%;
+            @include medidas(300px,300px);       
         }
         .container__section2{
             .overlay{
                 @include medidas(300px,300px);
-                margin-left: 25%;
             }
         }
 
@@ -69,7 +75,8 @@
     }
     /*Section 1*/
     .img__velas{
-        @include medidas(200px,200px);
+        @include medidas(175px,175px);
+        padding: 5%;
     } 
      /*LOGIN*/
      .img__log{
@@ -89,13 +96,7 @@
     /*Locales*/
    .section__locales{
      .img__local{
-        @include medidas(300px,350px)
-     }
-     .local_1{
-        margin-top: 10%; 
-     }
-     .local_2{
-        margin-top: 10%;
+        @include medidas(250px,250px)
      }
     }
 
@@ -119,32 +120,34 @@
     .header__otros{
         display: none;
     }
+    /*LOGIN*/
+    .form__log {
+        width: auto;
+    }
 }
 @media (min-width: 576px) and (max-width: 767px){
+    .header__otros1{
+        display: none;
+    }
+    .main{
+        background-color: map-get($mapa-colores,colormains);
+        overflow-x: hidden;
+    }
     /*INDEX*/
     /*Portada*/
     .carousel_1{
         @include portada (100%,auto,#cdc2bc);
         .img_portada{
-            @include medidas (100%,100%);  
+            @include medidas (300px,300px);  
         }
     }
     .texto_portada{
         margin-top: 5%;
-        margin-bottom: 5%;
         .coresix_estilos{
             .core_font{
-                @include font ($fontFamily3,250%,#30190e);
+                @include font ($fontFamily3,300%,#30190e);
             }
         }
-        .devilsnight_estilos{
-            .devil_font{
-                @include font ($fontFamily3,10%,black);
-                 
-            }
-        }
-       
-
     }
     /*Section 1*/
     .video{
@@ -162,14 +165,10 @@
         .imagen_section2 {
             display: block;
             @include medidas(400px,400px);
-            margin-left: 45%;
-            margin-top: 5%;
-            margin-bottom: 5%;
         }
         .container__section2{
             .overlay{
                 @include medidas(400px,400px);
-                margin-left: 45%;
             }
         }
     
@@ -189,7 +188,8 @@
     }
     /*Section 1*/
     .img__velas{
-        @include medidas(250px,250px);
+        @include medidas(200px,200px);
+        padding: 5%;
     } 
 
     /*LOGIN*/
@@ -198,6 +198,9 @@
     }
     .form_login{
         @include medidas(70vw,auto)
+    }
+    .form__log {
+        width: auto;
     }
     /*LOCALES*/
     .portada_locales{
@@ -211,13 +214,6 @@
    .section__locales{
      .img__local{
         @include medidas(400px,400px);
-        margin-left:9%;
-     }
-     .local_1{
-        margin-top: 10%; 
-     }
-     .local_2{
-        margin-top: 10%;
      }
     }
     /*CONTACTO*/
@@ -242,20 +238,23 @@
   
 }
 @media (min-width: 768px) and (max-width: 991px){
+    .header__otros1{
+        display: none;
+    }
         /*INDEX*/
     /*Portada*/
     .carousel_1{
-        @include portada (100%,auto,#cdc2bc);
+        @include portada (100%,70vh,#cdc2bc);
         .img_portada{
-            @include medidas (100%,100%);  
+            @include medidas (275px,275px);  
         }
     }
+    
     .texto_portada{
-        margin-top: 5%;
-        margin-bottom: 5%;
+       
         .coresix_estilos{
             .core_font{
-                @include font ($fontFamily3,250%,#30190e);
+                @include font ($fontFamily3,200%,#30190e);
             }
         }
     }
@@ -271,13 +270,11 @@
     .section2_main{
         .imagen_section2 {
             display: block;
-            @include medidas(250px,250px);
-            margin-top: 5%;
-            margin-bottom: 5%;
+            @include medidas(230px,230px);
         }
         .container__section2{
             .overlay{
-                @include medidas(250px,250px);
+                @include medidas(230px,230px);
                 .texto__section2 {
                     @include font ($fontFamily3,80%,$fontColor2);
                 }
@@ -304,9 +301,10 @@
     } 
     /*LOGIN*/
     .img__log{
-        @include medidas(300px,350px);
+        @include medidas(250px,300px);
       
     }
+    
 
     /*LOCALES*/
     .portada_locales{
@@ -320,14 +318,8 @@
    .section__locales{
      .img__local{
         @include medidas(450px,450px);
-        margin-left:10%;
      }
-     .local_1{
-        margin-top: 10%; 
-     }
-     .local_2{
-        margin-top: 10%;
-     }
+
     }
     /*CONTACTO*/
     /*Portada*/
@@ -365,9 +357,9 @@
     /*INDEX*/
     /*Portada*/
     .carousel_1{
-        @include portada (100%,90vh,#cdc2bc);
+        @include portada (100%,85vh,#cdc2bc);
         .img_portada{
-            @include medidas (400px,400px);  
+            @include medidas (350px,350px);  
         }
     }
     /*Seccion 2*/
@@ -375,12 +367,12 @@
         .imagen_section2 {
             display: block;
             @include medidas(300px,300px);
-            padding: 5%; 
+            
         }
         .container__section2{
             .overlay{
                 @include medidas(300px,300px);
-                padding: 5%;
+                
                 .texto__section2 {
                     @include font ($fontFamily3,100%,$fontColor2);
                 }
@@ -420,16 +412,9 @@
     /*Locales*/
    .section__locales{
      .img__local{
-        @include medidas(450px,500px);
+        @include medidas(450px,450px);
      }
-     .local_1{
-        margin-left: 10%;
-        padding: 5%; 
-     }
-     .local_2{
-        margin-left: 10%;
-        padding: 35%; 
-     }
+
     }
    /*CONTACTO*/ 
     .form_contacto{

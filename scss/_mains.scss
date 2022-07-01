@@ -8,6 +8,7 @@
 .main{
     background-color: map-get($mapa-colores,colormains);
     overflow-x: hidden;
+    
 }
 /*EFECTOS*/
 @keyframes aparecer {
@@ -24,18 +25,13 @@
 .carousel_1{
     @include portada (100%,85vh,#cdc2bc);
     .img_portada{
-        width: 500px;
+        @include medidas (450px,450px);
     }
 }
-.carousel_2{
-    @include portada (100%,85vh,#c0bbb7);
-    .img_portada{
-        @include medidas (500px,500px);
-        width: 500px;
-    }
-}
+
 .texto_portada{
         /*Estilos Portada1*/
+        margin: 0%;
     .coresix_estilos{
         hr.borde1_estilo{
             border-top: 1px solid #30190e;
@@ -63,6 +59,7 @@
             @include font ($fontFamily,large,#30190e);
         }
         .button_detalle{
+            text-decoration: none;
             background-color: #30190e;
             border-radius: 5%;
             width: 30%;
@@ -98,7 +95,7 @@
     }
     .imagen_section2 {
         display: block;
-        @include medidas(400px,400px);
+        @include medidas(350px,350px);
     }
     .container__section2 {
         position: relative;
@@ -117,7 +114,7 @@
             opacity: 0;
             transition: .5s ease;
             background-color: #c0bbb7;
-            @include medidas(400px,400px); 
+            @include medidas(350px,350px); 
             .texto__section2 {
                 @include font ($fontFamily3,auto,$fontColor2);
                 position: absolute;
@@ -195,20 +192,19 @@
 /*Locales*/
 .section__locales{
     background-color: #c0bbb7;
-    .div__local{
-        margin-left: 13%;
-        .try3{
-            text-align: center;
-            .horarios{
-                font-weight: bold;
-            }
+    .try3{
+        text-align: center;
+        .horarios{
+             font-weight: bold;
         }
     }
     .img__local{
-        @include medidas(550px,550px)
+        @include medidas(500px,500px);
     }
     .local_1{
+        margin-top: 10%;
         background-color: #4f954f;
+        width: 100%;
         @include font ($fontFamily,auto,#fff9ed);
         text-align: center;
     }
@@ -269,12 +265,15 @@
 
 /*MAIN LOGIN*/
 .principal{
-    background-color:$fontColor;
+    background-color:map-get($mapa-colores,marron);
     @include font ($fontFamily,auto,#fff9ed);
     text-align: center;
 }
 .img__log{
     @include medidas(400px,400px)
+}
+.form__log {
+    width: 100%;
 }
 
 
